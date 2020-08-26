@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"penguin_atlas_1", frames: [[255,558,165,144],[0,558,253,345],[0,0,511,184],[513,0,511,184],[0,186,511,184],[513,186,511,184],[0,372,511,184],[513,372,511,184]]}
+		{name:"penguin_atlas_1", frames: [[0,558,253,345],[0,0,511,184],[513,0,511,184],[0,186,511,184],[513,186,511,184],[0,372,511,184],[513,372,511,184]]}
 ];
 
 
@@ -26,58 +26,51 @@ lib.ssMetadata = [
 
 
 
-(lib.CachedBmp_8 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_7 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_6 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_5 = function() {
+(lib.CachedBmp_4 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_4 = function() {
+(lib.CachedBmp_3 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_3 = function() {
+(lib.CachedBmp_2 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.CachedBmp_2 = function() {
-	this.initialize(ss["penguin_atlas_1"]);
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
-
-
 (lib.CachedBmp_1 = function() {
 	this.initialize(ss["penguin_atlas_1"]);
-	this.gotoAndStop(7);
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -671,18 +664,21 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.CachedBmp_8();
-	this.instance.setTransform(-17.9,10.95,0.5,0.5);
+	this.text = new cjs.Text("R", "60px 'Bauhaus 93'");
+	this.text.lineHeight = 70;
+	this.text.lineWidth = 79;
+	this.text.parent = this;
+	this.text.setTransform(-15.9,12.95);
 
-	this.instance_1 = new lib.CachedBmp_7();
-	this.instance_1.setTransform(-63.2,-86.15,0.5,0.5);
+	this.instance = new lib.CachedBmp_7();
+	this.instance.setTransform(-63.2,-86.15,0.5,0.5);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.text}]}).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-63.2,-86.1,127.8,172.5);
+p.nominalBounds = new cjs.Rectangle(-63.2,-86.1,128,172.5);
 
 
 (lib.penguinnormal = function(mode,startPosition,loop,reversed) {
@@ -1733,7 +1729,7 @@ if (reversed == null) { reversed = false; }
 	this.replayButton.alpha = 0;
 	this.replayButton._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.replayButton).wait(555).to({_off:false},0).wait(1).to({regX:0.7,x:506,y:534.35,alpha:0.125},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.replayButton).wait(555).to({_off:false},0).wait(1).to({regX:0,regY:0,x:505.35,y:534.3,alpha:0.125},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:1},0).wait(1));
 
 	this._renderFirstFrame();
 
@@ -1758,7 +1754,7 @@ if (reversed == null) { reversed = false; }
 	this.replayButton.alpha = 0;
 	this.replayButton._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.replayButton).wait(495).to({_off:false},0).wait(1).to({regX:0.7,x:506,y:534.35,alpha:0.125},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:1},0).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.replayButton).wait(495).to({_off:false},0).wait(1).to({regX:0,regY:0,x:505.35,y:534.3,alpha:0.125},0).wait(1).to({alpha:0.25},0).wait(1).to({alpha:0.375},0).wait(1).to({alpha:0.5},0).wait(1).to({alpha:0.625},0).wait(1).to({alpha:0.75},0).wait(1).to({alpha:0.875},0).wait(1).to({alpha:1},0).wait(1));
 
 	this._renderFirstFrame();
 
@@ -2922,7 +2918,7 @@ if (reversed == null) { reversed = false; }
 	this.replay_button2.layerIndex = 3
 	this.replay_button2.maskLayerName = 0
 
-	this.timeline.addTween(cjs.Tween.get(this.replay_button2).wait(555).to({regX:181.3,regY:364.1,scaleX:1.9644,scaleY:1.9644,x:-0.05,y:0.15},0).wait(1).to({regX:506,regY:534.4,scaleX:1,scaleY:1,x:324.7,y:170.4},0).wait(8));
+	this.timeline.addTween(cjs.Tween.get(this.replay_button2).wait(555).to({regX:181.3,regY:364.1,scaleX:1.9644,scaleY:1.9644,x:-0.05,y:0.15},0).wait(1).to({regX:505.4,regY:534.4,scaleX:1,scaleY:1,x:324.1,y:170.4},0).wait(8));
 
 	// replay_button1_obj_
 	this.replay_button1 = new lib.Scene_1_replay_button1();
@@ -2935,7 +2931,7 @@ if (reversed == null) { reversed = false; }
 	this.replay_button1.layerIndex = 4
 	this.replay_button1.maskLayerName = 0
 
-	this.timeline.addTween(cjs.Tween.get(this.replay_button1).wait(495).to({regX:181.3,regY:364.1,scaleX:1.9644,scaleY:1.9644,x:-0.05,y:0.15},0).wait(1).to({regX:506,regY:534.4,scaleX:1,scaleY:1,x:324.7,y:170.4},0).wait(7).to({_off:true},1).wait(60));
+	this.timeline.addTween(cjs.Tween.get(this.replay_button1).wait(495).to({regX:181.3,regY:364.1,scaleX:1.9644,scaleY:1.9644,x:-0.05,y:0.15},0).wait(1).to({regX:505.4,regY:534.4,scaleX:1,scaleY:1,x:324.1,y:170.4},0).wait(7).to({_off:true},1).wait(60));
 
 	// penguin_loop_obj_
 	this.penguin_loop = new lib.Scene_1_penguin_loop();
